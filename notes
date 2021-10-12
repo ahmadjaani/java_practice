@@ -1,0 +1,214 @@
+Keywords: reserved words
+------------------------------------------------
+private, public, protected, int, short, boolean,
+break, continue, for, while, do, class, interface,
+import, package, static, abstract, final,
+synchronized, volatile, void, long, double, byte
+etc...
+
+
+variables:
+----------------
+used to store value during the program execution
+
+types of variables:
+--------------------
+1. local-> variable defined inside a method
+2. instance variable or non-static variable
+3. static variable or class variable
+
+while using a variable, we must define it before.
+
+Create object of Customer class and count the number of objects got created. Display the count.
+
+Casting:
+----------
+
+-> Primitive Type Casting
+1. up casting (implicit)
+2. down casting (explicit)
+
+-> Reference Type Casting
+1. up casting (implicit)
+2. down casting (explicit)
+
+Compatible Types:
+--------------------
+int, short, byte, long, float, double
+
+InCompatible Types:
+--------------------
+int & boolean
+boolean & double
+
+oops:
+----------------------
+Encapsulation- wrapping up properties and behavior in class is called
+as encapsulation.
+
+class- template/blueprint for objects, factory of objects
+
+object- instance of a class, memory allocated for object inside heap area
+
+When we create an object, the instance properties/fields and
+instance methods of that class are copied inside the object
+
+this keyword-> 
+1. refers the class instance variables/methods
+2. inside the constructor when parameter name and instance field names
+are same, to distinguish between them, use this keyword
+3. constructor chaining, calling a constructor from another constructor
+4. multiple constructors in a class is known as constructor overloading
+
+Method Overloading(Static Polymorphism)
+------------------------------------------
+define multiple methods with the same name but different number of 
+parameters and different type of parameters
+
+If we don't write any constructor inside a class, then compiler provides
+a default zero-arg constructor
+
+Any class having all fields as private, is known as fully
+encapsulated class.
+
+Initiliazation blocks:
+--------------------------
+1. instance block-> executed when creating an instance of an class,
+used to initialize instance fields/properties
+
+2. static block-> executed when class is loading for the first time
+used to initialize static fields/properties
+
+
+
+
+
+Abstraction
+Inheritance
+Polymorphism
+
+Banking System:
+-------------------
+Account
+ATM Card
+Customer
+Clerk
+Manager
+Loan
+Withdrawal
+Deposit
+Balance
+Branch
+
+
+Health care:
+--------------
+Insurance
+
+Patient:-
+	patientId, name,address, contact,age,Doctor,contactPerson
+	schedule, Bill, Prescription
+	
+	//what does a patient do?
+	takePE(){}
+	seeADoc(){}
+	bookAppointment(){}
+	
+
+
+
+
+Doctor
+Prescription
+Appointment
+Bills
+Test
+Physical Evaluation
+Accidental Benefits
+Hospital
+
+
+
+
+Inheritance:
+-----------------
+extending properties and behaviors from a super class in a child class is called inheritance
+
+super class or parent class or base class
+
+
+derived class or child class or subclass
+
+-> code re-usability
+
+Wrapper Classes:
+----------------------
+Integer  	-> 		int
+Short		->		short
+Long		-> 		long
+Byte		-> 		byte
+Float		-> 		float
+Double		-> 		double
+Boolean		-> 		boolean
+Character	-> 		char
+
+class Demo11{
+	private fields : id, name
+	getters and setters
+}
+
+class TestDemo11{
+	main(){
+		Demo11 object = new Demo11();
+		sysoout(object);
+}
+
+
+Access Modifier:
+----------------
+private -> most restricted, visible only inside the same class
+public -> least restricted, visible everywhere
+no modifier -> accessible only inside the package
+protected -> accessible in the same package and other packages with inheritance
+
+Abstraction:
+--------------
+show/expose only the essential information and hide the unrelated details from user
+
+1. Abstract class:
+------------------------
+A java class declared with abstract keyword is called an abstract class
+It can not be instantiated, object of abstract class can't be created
+An abstract class can have zero abstract methods
+An abstract method means no body, it ends with semicolon
+An abstract class can have full-body methods
+If a class has an abstract method then the class must be declared abstract
+An abstract class can never be final
+An abstract class meant to be inherited and implement its abstract methods
+Inner class/interface
+
+
+
+2. Interfaces:
+-------------------
+An interface is used to define contract between java class and outside world
+
+-> It can not be instantiated, object of an interface can't be created
+-> It can contain abstract methods, full-body methods
+-> It can have final static fields (constants)
+-> Inner class/interface
+-> A class can implement multiple interfaces
+
+
+
+
+
+
+
+
+
+
+
+
+
+
